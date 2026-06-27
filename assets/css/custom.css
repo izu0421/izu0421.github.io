@@ -6,24 +6,25 @@
 */
 
 :root {
-	--paper:      #f7f4ec;
-	--paper-2:    #f0ebe0;
-	--paper-3:    #f3eee3;
-	--ink:        #3b3833;
-	--ink-soft:   #6f6a61;
-	--heading:    #211f1b;
-	--accent:     #2f6b54;
-	--accent-dark:#244f3f;
-	--accent-tint:rgba(47, 107, 84, 0.12);
-	--gold:       #b07d3a;
-	--sidebar:    #1b211e;
-	--sidebar-2:  #232b27;
+	--paper:      #f7f5f0;
+	--paper-2:    #efede8;
+	--paper-3:    #f2f0eb;
+	--ink:        #1a1a18;
+	--ink-soft:   #555555;
+	--heading:    #1a1a18;
+	--accent:     #456bb7;
+	--accent-dark:#2f4f8f;
+	--accent-light:#9db8e8;
+	--accent-tint:rgba(69, 107, 183, 0.12);
+	--gold:       #456bb7;
+	--sidebar:    #1c2536;
+	--sidebar-2:  #26314a;
 }
 
 /* ---- Base typography ---- */
 
 	body {
-		font-family: 'Hanken Grotesk', sans-serif;
+		font-family: 'DM Sans', sans-serif;
 		font-size: 16.5pt;
 		font-weight: 400;
 		line-height: 1.72em;
@@ -32,14 +33,14 @@
 		-moz-osx-font-smoothing: grayscale;
 	}
 
-	input, textarea, select { font-family: 'Hanken Grotesk', sans-serif; }
+	input, textarea, select { font-family: 'DM Sans', sans-serif; }
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
 		body { font-size: 15pt; }
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Fraunces', Georgia, serif;
+		font-family: 'Source Serif 4', Georgia, serif;
 		color: var(--heading);
 		font-weight: 500;
 	}
@@ -140,7 +141,7 @@
 	#main > section.cover { position: relative; }
 
 	#main > section.one {
-		background-color: #182019;
+		background-color: #161f30;
 		background-blend-mode: multiply;
 		background-position: center;
 		background-size: cover;
@@ -150,14 +151,14 @@
 		content: '';
 		position: absolute;
 		inset: 0;
-		background: linear-gradient(150deg, rgba(20, 33, 26, 0.82), rgba(24, 40, 32, 0.7) 55%, rgba(12, 20, 16, 0.9));
+		background: linear-gradient(150deg, rgba(20, 30, 52, 0.82), rgba(31, 45, 74, 0.7) 55%, rgba(12, 16, 30, 0.92));
 		pointer-events: none;
 	}
 
 	#main > section.cover .container { position: relative; z-index: 1; }
 
 	#main section.cover header h2.alt {
-		font-family: 'Fraunces', Georgia, serif;
+		font-family: 'Source Serif 4', Georgia, serif;
 		font-weight: 400;
 		font-size: 3.2em;
 		line-height: 1.12em;
@@ -186,7 +187,7 @@
 		background-color: var(--accent);
 		background-image: none;
 		border-radius: 2em;
-		font-family: 'Hanken Grotesk', sans-serif;
+		font-family: 'DM Sans', sans-serif;
 		font-weight: 600;
 		font-size: 0.92em;
 		letter-spacing: 0.02em;
@@ -241,7 +242,7 @@
 	#logo .image.avatar img { width: 100%; height: 100%; object-fit: cover; }
 
 	#logo h1 {
-		font-family: 'Fraunces', Georgia, serif;
+		font-family: 'Source Serif 4', Georgia, serif;
 		font-weight: 600;
 		font-size: 1.5em;
 		letter-spacing: 0.01em;
@@ -249,19 +250,19 @@
 	}
 
 	#logo p {
-		font-family: 'Hanken Grotesk', sans-serif;
+		font-family: 'DM Sans', sans-serif;
 		font-size: 0.62em;
 		font-weight: 500;
 		letter-spacing: 0.22em;
 		text-transform: uppercase;
-		color: var(--gold);
+		color: var(--accent-light);
 		margin-top: 0.8em;
 	}
 
 	#nav { text-align: left; }
 
 	#nav ul li a {
-		font-family: 'Hanken Grotesk', sans-serif;
+		font-family: 'DM Sans', sans-serif;
 		border-radius: 0 1.6em 1.6em 0;
 		margin-right: 0.9em;
 		transition: background-color 0.2s ease, color 0.2s ease;
@@ -274,10 +275,10 @@
 		background: var(--accent-tint);
 		box-shadow: inset 0 0 0 1px rgba(47, 107, 84, 0.35);
 	}
-	#nav ul li a.active span:before { color: var(--gold); }
+	#nav ul li a.active span:before { color: var(--accent-light); }
 
 	#header .icons a { color: rgba(255, 255, 255, 0.4); }
-	#header .icons a:hover { color: var(--gold); }
+	#header .icons a:hover { color: var(--accent-light); }
 
 /* ---- Publication cards ---- */
 
@@ -311,7 +312,7 @@
 	.item header { padding: 1.1em 1.3em 0 1.3em; font-size: 1em; }
 
 	.item header h3 {
-		font-family: 'Fraunces', Georgia, serif;
+		font-family: 'Source Serif 4', Georgia, serif;
 		font-size: 1.18em;
 		font-weight: 500;
 		line-height: 1.32em;
@@ -333,7 +334,7 @@
 		max-width: 60rem;
 		margin: 0.25em auto 0.45em auto;
 		text-align: left;
-		font-family: 'Hanken Grotesk', sans-serif;
+		font-family: 'DM Sans', sans-serif;
 		font-size: 0.72em;
 		font-weight: 700;
 		letter-spacing: 0.14em;
@@ -356,7 +357,7 @@
 /* ---- Approach columns ---- */
 
 	#approach .row h3 {
-		font-family: 'Fraunces', Georgia, serif;
+		font-family: 'Source Serif 4', Georgia, serif;
 		font-weight: 500;
 		font-size: 1.6em;
 		color: var(--accent-dark);
@@ -398,7 +399,7 @@
 	}
 
 	ul.awards li h3 {
-		font-family: 'Fraunces', Georgia, serif;
+		font-family: 'Source Serif 4', Georgia, serif;
 		font-size: 1.12em;
 		font-weight: 500;
 		margin: 0 0 0.2em 0;
